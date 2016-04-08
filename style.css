@@ -2,9 +2,63 @@ body
 {
   width: 100%;
   font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  background-color: #222222;
 }
 
 #container
 {
 
+}
+
+#logo
+{
+
+}
+
+#clock
+{
+  text-align: right;
+  margin-right: 52px;
+  font-size: 52px;
+}
+
+#menu
+{
+
+}
+
+#content
+{
+
+}
+
+#footer
+{
+  text-align: center;
+}
+
+.option-menu
+{
+  text-align: center;
+}
+
+.option-menu:hover
+{
+  text-align: center;
+}
+
+a:link
+{
+  decoration: none;
+}
+
+a:active
+{
+  decoration: none;
+}
+
+a:visited
+{
+  decoration: none;
 }

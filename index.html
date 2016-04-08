@@ -15,11 +15,31 @@
   <script type="text/javascript" src="skrypt.js" ></script> <!-- Odnośnik do pliku JavaScript -->
 
 </head>
-<body>
+<body onLoad="clockCount()"> <!-- Startuje zegar, zaraz po załadowaniu na stronę -->
 
 <div id="container" > <!-- DIV do całej strony -->
 
+  <div id="logo" > <!-- Tu umieścimy obrazek z logo + nazwa firmy -->
 
+    <div id="clock" ></div> <!-- Tutaj jest zegar, żeby strona była pełniejsza i trochę lepiej się prezentowała -->
+
+  </div>
+
+  <div id="menu" > <!-- Tutaj jest stylizacja menu ( zależy od tego ile będziemy chcieli dać ewentualnych podstron ) -->
+
+    <div class="option-menu" > <!-- Jedna z kilku opcji w menu. Dzięki klasie będziemy mogli wystylizować 1 DIV i reszta z tej samej klasy będzie identycznie wyglądać -->
+
+    </div>
+
+  </div>
+
+  <div id="content" > <!-- Zawartość strony ( mapy, dane kontaktowe itp.) -->
+
+  </div>
+
+  <div id="footer" > <!-- Tzw. Stopka. Nazwa firmy + znak handlowy -->
+    &copy
+  </div>
 
 </div>
 

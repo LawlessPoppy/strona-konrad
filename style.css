@@ -13,24 +13,30 @@ body
 
 #logo
 {
-
+  width: 49%;
+  text-align: left;
+  margin-left: auto;
+  font-size: 52px;
+  float: left;
 }
 
 #clock
 {
+  width: 49%;
   text-align: right;
-  margin-right: 52px;
+  margin-right: auto;
   font-size: 52px;
+  float: left;
 }
 
 #menu
 {
-
+  clear: both;
 }
 
 #content
 {
-
+  clear: both;
 }
 
 #footer
@@ -40,7 +46,14 @@ body
 
 .option-menu
 {
+  background-color: #111111;
+  width: 10%;
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  float: left;
+  border-style: solid;
 }
 
 .option-menu:hover

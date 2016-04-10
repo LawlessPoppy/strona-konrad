@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 
 <head>
 
-  <title></title>
+  <title>Kowamet - Strona Główna</title>
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <meta name="description" content="" />
+  <meta name="description" content="Witamy na stronie sieci naszych sklepów Kowamet. Na naszej stronie można znaleźć nasz adres, dane kontaktowe oraz obecny asortyment" />
   <!-- 400 znaków mniej więcej -->
-  <meta name="keywords" content="" />
+  <meta name="keywords" content="kowamet, " />
   <!-- TAGI -->
   <meta name="author" content="Konrad Kula / Szymon Bartyzel" />
   <!-- Informacje o autorze ( Nie radzę tego zamieszczać, ale jak chcesz ) -->
@@ -25,54 +26,69 @@
 <body onLoad="clockCount()">
   <!-- Startuje zegar, zaraz po załadowaniu na stronę -->
 
+
   <div id="container">
     <!-- DIV do całej strony -->
 
     <div id="logo">
       <!-- Tu umieścimy obrazek z logo + nazwa firmy -->
-
-      <p>
-        Nazwa Firmy + logo
-      </p>
-
+      <h1>KOWAMET</h1>
     </div>
 
     <div id="clock"></div>
     <!-- Tutaj jest zegar, żeby strona była pełniejsza i trochę lepiej się prezentowała -->
+    <div id="date"></div>
+    <!-- Data + status otwarcia sklepu -->
 
     <div id="menu">
       <!-- Tutaj jest stylizacja menu ( zależy od tego ile będziemy chcieli dać ewentualnych podstron ) -->
 
       <div class="option-menu">
         <!-- Jedna z kilku opcji w menu. Dzięki klasie będziemy mogli wystylizować 1 DIV i reszta z tej samej klasy będzie identycznie wyglądać -->
-          <a href="opt1.html" title="Opcja 1" class="option-menu-link" >Opcja 1</a>
+        <a href="asortyment.html" title="Asortyment" class="option-menu-link"><br />Asortyment</a>
       </div>
 
       <div class="option-menu">
         <!-- Jedna z kilku opcji w menu. Dzięki klasie będziemy mogli wystylizować 1 DIV i reszta z tej samej klasy będzie identycznie wyglądać -->
 
-          <a href="opt2.html" title="Opcja 2" class="option-menu-link" >Opcja 2</a>
-
+        <a href="lokalizacja.html" title="Lokalizacja" class="option-menu-link"><br />Lokalizacja</a>
+        <!-- Myślę, że trzeba będzie zrobić tak:
+              jak klikniesz Asortyment to otworzy się na tej samej stronie taka podstrona wiesz żaden nowy link tylko
+              fragment strony się zmieni. To samo dla Lokalizacja, czyli tak jak mają tutaj http://metal-gum.net.pl/ -->
       </div>
 
       <div class="option-menu">
         <!-- Jedna z kilku opcji w menu. Dzięki klasie będziemy mogli wystylizować 1 DIV i reszta z tej samej klasy będzie identycznie wyglądać -->
-
-          <a href="opt3.html" title="Opcja 3" class="option-menu-link" >Opcja 3</a>
-
+        <a href="kontakt.html" title="Dane Kontaktowe" class="option-menu-link"><br />Kontakt</a>
       </div>
 
     </div>
+  </div>
 
-    <div id="content">
-      <!-- Zawartość strony ( mapy, dane kontaktowe itp.) -->
-      <h1> TEXT </h1>
-    </div>
+  <div id="content">
+    <!-- Zawartość strony ( mapy, dane kontaktowe itp.) -->
+    <h1> Godziny otwarcia: </h1>
+    <p>
+      <b>Piątek - Poniedziałek:</b> 8:00 - 17:00
+    </p>
+    <p>
+      <b>Sobota</b>: 9:00 - 14:00
+    </p>
+    <p>
+      <b>Niedziela:</b> Nieczynne
+    </p>
+    <p>
+      <b>Telefon kontaktowy:</b> 0 123 456 789
+    </p>
+    <p>
+      <b>e-mail:</b> kowamet@example.com
+    </p>
+  </div>
 
-    <div id="footer">
-      <!-- Tzw. Stopka. Nazwa firmy + znak handlowy -->
-      Nazwa Firmy 2016&copy
-    </div>
+  <div id="footer">
+    <!-- Tzw. Stopka. Nazwa firmy + znak handlowy -->
+    Kowamet 2016&copy
+  </div>
 
   </div>
 

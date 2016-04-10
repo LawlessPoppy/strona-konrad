@@ -2,8 +2,8 @@ body
 {
   width: 100%;
   font-family: 'Lato', sans-serif;
-  color: #ffffff;
-  background-color: #222222;
+  color:#ffffff;
+  background-color: #333333;
   font-size: 25px;
 }
 
@@ -15,19 +15,33 @@ body
 
 #logo
 {
-  width: 50%;
-  text-align: left;
+  border-radius: 6px 12px;
+  background-color: #ffff00;
+  color: #ff0000;
+  width: 45%;
+  text-align: center;
   font-size: 52px;
   float: left;
+  text-decoration: underline;
+  margin: 20px;
 }
 
 #clock
 {
-  padding-top: 52px;
   width: 50%;
   text-align: center;
+  margin: 20px;
   font-size:  52px;
   float: left;
+}
+
+#date
+{
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
 }
 
 #menu
@@ -35,8 +49,35 @@ body
   clear: both;
 }
 
+.option-menu
+{
+  border-radius: 6px 12px;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  background-color: #ff0000;
+  margin: 60px;
+  float: left;
+}
+
+.option-menu:hover
+{
+  background-color: #ee0000;
+}
+
+.option-menu-link
+{
+
+  text-decoration: none;
+  display: block;
+  height: 100px;
+  width: 500px;
+  border-radius: 6px 12px;
+}
+
 #content
 {
+  margin: 120px;
   clear: both;
 }
 
@@ -44,50 +85,23 @@ body
 {
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #333333;
   text-align: center;
-}
-
-.option-menu
-{
-  height: 75px;
-  width: 150px;
-  text-align: center;
-  background-color: #0099ff;
-  margin: 10px;
-  float: left;
-
-
-}
-
-.option-menu:hover
-{
-  background-color: #0088ee;
-}
-
-.option-menu-link
-{
-  text-decoration: none;
-  color: #ffffff;
-  display: block;
-  height: 75px;
-  width: 150px;
 }
 
 a:link
 {
-  color: #ffffff;
+  color: #ffff00;
   text-decoration: none;
 }
 
 a:active
 {
-  color: #ffffff;
+  color: #ffff00;
   text-decoration: none;
 }
 
 a:visited
 {
-  color: #ffffff;
+  color: #ffff00;
   text-decoration: none;
 }

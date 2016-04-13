@@ -23,7 +23,7 @@
 
 </head>
 
-<body onLoad="clockCount()">
+<body onLoad="Opcl(), clockCount(), Stopka()">
   <!-- Startuje zegar, zaraz po załadowaniu na stronę -->
 
 
@@ -40,8 +40,14 @@
     <div id="date"></div>
     <!-- Data + status otwarcia sklepu -->
 
+    <div style="clear: both;"></div>
+
     <div id="menu">
-      <!-- Tutaj jest stylizacja menu ( zależy od tego ile będziemy chcieli dać ewentualnych podstron ) -->
+
+      <div class="option-menu">
+        <!-- Jedna z kilku opcji w menu. Dzięki klasie będziemy mogli wystylizować 1 DIV i reszta z tej samej klasy będzie identycznie wyglądać -->
+        <a href="index.html" title="Strona Główna" class="option-menu-link"><br />Strona Główna</a>
+      </div>
 
       <div class="option-menu">
         <!-- Jedna z kilku opcji w menu. Dzięki klasie będziemy mogli wystylizować 1 DIV i reszta z tej samej klasy będzie identycznie wyglądać -->
@@ -63,7 +69,6 @@
       </div>
 
     </div>
-  </div>
 
   <div id="content">
     <!-- Zawartość strony ( mapy, dane kontaktowe itp.) -->
@@ -85,10 +90,9 @@
     </p>
   </div>
 
-  <div id="footer">
-    <!-- Tzw. Stopka. Nazwa firmy + znak handlowy -->
-    Kowamet 2016&copy
-  </div>
+  <div id="opcl"></div>
+
+  <div id="footer"><!-- Tzw. Stopka. Nazwa firmy + znak handlowy --></div>
 
   </div>
 

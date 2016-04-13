@@ -76,3 +76,337 @@ function clockCount() // Funkcja zegara
 
   setTimeout("clockCount()", 1000); // Opóźnienie odliczania o 1 sekundę
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function Opcl() // Funkcja wyświetlająca za ile sklep będzie zamknięty otwarty
+{
+
+  var hdz; // godzin do zamknięcia
+  var mdz; // minut do zamknięcia
+  var sdz; // sekund do zamknięcia
+
+  var hdo; // godzin do otwarcia
+  var mdo; // minut do  otwarcia
+  var sdo; // sekund do otwarcia
+
+
+  var today = new Date(); // Inicjacja obecnej daty do zmiennej "today"
+
+  var h = today.getHours(); // Pobranie godzin
+
+
+  var m = today.getMinutes(); // Pobranie minut
+
+
+  var s = today.getSeconds(); // Pobranie sekund
+
+
+  var d = today.getDay(); // Pobranie dnia
+
+  if (d > 0) // Czy dzień to Poniedziałek do Czwartek
+  {
+    if (h >= 8 && h < 17) // Kiedy będzie zamknięty
+    {
+      hdz = 17 - h;
+      mdz = 60 - m;
+      sdz = 60 - s;
+
+      if (s > 0)
+      {
+          mdz = mdz - 1;
+      }
+
+      if (m > 0)
+      {
+        hdz = hdz - 1;
+      }
+
+      if (hdz < 10) hdz = "0" + hdz;
+      if (mdz < 10) mdz = "0" + mdz;
+      if (sdz < 10) sdz = "0" + sdz;
+      if (mdz == 60) mdz = "00";
+      if (sdz == 60) sdz = "00";
+
+      document.getElementById("opcl").innerHTML = "Czas do zamknięcia sklepu:<br />" + hdz + ":" + mdz + ":" + sdz;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+
+    }
+
+    else // Kiedy będzie otwarty
+    {
+      if(h < 8)
+      {
+        hdo = 8 - h;
+        mdo = 60 - m;
+        sdo = 60 - s;
+
+        if (s > 0)
+        {
+          mdo = mdo - 1;
+        }
+
+        if (m > 0)
+        {
+          hdo = hdo - 1;
+        }
+
+        if (hdo < 10) hdo = "0" + hdo;
+        if (mdo < 10) mdo = "0" + mdo;
+        if (sdo < 10) sdo = "0" + sdo;
+        if (mdo == 60) mdo = "00";
+        if (sdo == 60) sdo = "00";
+
+        document.getElementById("opcl").innerHTML = "Czas do otwarcia sklepu:<br />" + hdo + ":" + mdo + ":" + sdo;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+      }
+
+      else if (h >= 17)
+      {
+        hdo = 32 - h;
+        mdo = 60 - m;
+        sdo = 60 - s;
+
+        if (s > 0)
+        {
+          mdo = mdo - 1;
+        }
+
+        if (m > 0)
+        {
+          hdo = hdo - 1;
+        }
+
+        if (hdo < 10) hdo = "0" + hdo;
+        if (mdo < 10) mdo = "0" + mdo;
+        if (sdo < 10) sdo = "0" + sdo;
+        if (mdo == 60) mdo = "00";
+        if (sdo == 60) sdo = "00";
+
+        document.getElementById("opcl").innerHTML = "Czas do otwarcia sklepu:<br />" + hdo + ":" + mdo + ":" + sdo;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+      }
+    }
+
+  }
+
+  else if (d == 5) // Czy dzień to Piątek
+  {
+    if (h >= 8 && h < 17) // Kiedy będzie zamknięty
+    {
+      hdz = 17 - h;
+      mdz = 60 - m;
+      sdz = 60 - s;
+
+      if (s > 0)
+      {
+        mdz = mdz - 1;
+      }
+
+      if (m > 0)
+      {
+        hdz = hdz - 1;
+      }
+
+      if (hdz < 10) hdz = "0" + hdz;
+      if (mdz < 10) mdz = "0" + mdz;
+      if (sdz < 10) sdz = "0" + sdz;
+      if (mdz == 60) mdz = "00";
+      if (sdz == 60) sdz = "00";
+
+      document.getElementById("opcl").innerHTML = "Czas do zamknięcia sklepu:<br />" + hdz + ":" + mdz + ":" + sdz;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+
+    }
+
+    else // Kiedy będzie otwarty
+    {
+      if(h < 8)
+      {
+        hdo = 8 - h;
+        mdo = 60 - m;
+        sdo = 60 - s;
+
+        if (s > 0)
+        {
+          mdo = mdo - 1;
+        }
+
+        if (m > 0)
+        {
+          hdo = hdo - 1;
+        }
+
+        if (hdo < 10) hdo = "0" + hdo;
+        if (mdo < 10) mdo = "0" + mdo;
+        if (sdo < 10) sdo = "0" + sdo;
+        if (mdo == 60) mdo = "00";
+        if (sdo == 60) sdo = "00";
+
+        document.getElementById("opcl").innerHTML = "Czas do otwarcia sklepu:<br />" + hdo + ":" + mdo + ":" + sdo;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+      }
+
+      else if (h >= 17)
+      {
+        hdo = 33 - h;
+        mdo = 60 - m;
+        sdo = 60 - s;
+
+        if (s > 0)
+        {
+          mdo = mdo - 1;
+        }
+
+        if (m > 0)
+        {
+          hdo = hdo - 1;
+        }
+
+        if (hdo < 10) hdo = "0" + hdo;
+        if (mdo < 10) mdo = "0" + mdo;
+        if (sdo < 10) sdo = "0" + sdo;
+        if (mdo == 60) mdo = "00";
+        if (sdo == 60) sdo = "00";
+
+        document.getElementById("opcl").innerHTML = "Czas do otwarcia sklepu:<br />" + hdo + ":" + mdo + ":" + sdo;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+      }
+    }
+
+  }
+  else if (d == 6) // Czy dzień to Sobota
+  {
+
+    if (h >= 9 && h < 14) // Kiedy będzie zamknięty
+    {
+      hdz = 14 - h;
+      mdz = 60 - m;
+      sdz = 60 - s;
+
+      if (s > 0)
+      {
+        mdz = mdz - 1;
+      }
+
+      if (m > 0)
+      {
+        hdz = hdz - 1;
+      }
+
+      if (hdz < 10) hdz = "0" + hdz;
+      if (mdz < 10) mdz = "0" + mdz;
+      if (sdz < 10) sdz = "0" + sdz;
+      if (mdz == 60) mdz = "00";
+      if (sdz == 60) sdz = "00";
+
+      document.getElementById("opcl").innerHTML = "Czas do zamknięcia sklepu:<br />" + hdz + ":" + mdz + ":" + sdz;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+
+    }
+
+    else // Kiedy będzie otwarty
+    {
+      if(h < 9)
+      {
+        hdo = 9 - h;
+        mdo = 60 - m;
+        sdo = 60 - s;
+
+        if (s > 0)
+        {
+          mdo = mdo - 1;
+        }
+
+        if (m > 0)
+        {
+          hdo = hdo - 1;
+        }
+
+        if (hdo < 10) hdo = "0" + hdo;
+        if (mdo < 10) mdo = "0" + mdo;
+        if (sdo < 10) sdo = "0" + sdo;
+        if (mdo == 60) mdo = "00";
+        if (sdo == 60) sdo = "00";
+
+        document.getElementById("opcl").innerHTML = "Czas do otwarcia sklepu:<br />" + hdo + ":" + mdo + ":" + sdo;
+
+        setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+    }
+
+    else if (h >= 14)
+    {
+      hdo = 32 + (24 - h);
+      mdo = 60 - m;
+      sdo = 60 - s;
+
+      if (s > 0)
+      {
+        mdo = mdo - 1;
+      }
+
+      if (m > 0)
+      {
+        hdo = hdo - 1;
+      }
+
+      if (hdo < 10) hdo = "0" + hdo;
+      if (mdo < 10) mdo = "0" + mdo;
+      if (sdo < 10) sdo = "0" + sdo;
+      if (mdo == 60) mdo = "00";
+      if (sdo == 60) sdo = "00";
+
+      document.getElementById("opcl").innerHTML = "Czas do otwarcia sklepu:<br />" + hdo + ":" + mdo + ":" + sdo;
+
+      setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+    }
+
+  }
+}
+
+  else if (d == 0) // Czy dzień to Niedziela, Cały dzień jest zamknięty
+  {
+    hdo = 32 - h;
+    mdo = 60 - m;
+    sdo = 60 - s;
+
+    if (s > 0)
+    {
+      mdo = mdo - 1;
+    }
+
+    if (m > 0)
+    {
+      hdo = hdo - 1;
+    }
+
+    if (hdo < 10) hdo = "0" + hdo;
+    if (mdo < 10) mdo = "0" + mdo;
+    if (sdo < 10) sdo = "0" + sdo;
+    if (mdo == 60) mdo = "00";
+    if (sdo == 60) sdo = "00";
+
+    document.getElementById("opcl").innerHTML = "Czas do otwarcia sklepu:<br />" + hdo + ":" + mdo + ":" + sdo;
+
+    setTimeout("Opcl()", 1000); // Opóźnienie odliczania o 1 sekundę
+
+  }
+
+}
+function Stopka()
+{
+  today = new Date();
+
+  var y = today.getYear();
+
+  y = Number(y+1900);
+
+  document.getElementById("footer").innerHTML = "KOWAMET " + y + "&copy";
+}
